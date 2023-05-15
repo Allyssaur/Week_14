@@ -1,0 +1,281 @@
+body {
+  background-image: linear-gradient(180deg, rgb(30, 35, 37), rgb(44, 90, 121));
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  font-family: 'Noto Serif', serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+#cardsize {
+  width: 18rem;
+}
+.navbar-brand {
+  font-family: 'Gothic A1', sans-serif;
+}
+a{
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.movie-img {
+  width: 18rem;
+  height: 28rem;
+  object-fit: cover;
+  object-position: -2px 5%;
+  border-radius: 10px;
+}
+#CommentButton {
+  margin-right: 20px;
+  margin-left: 15px;
+}
+.Commentbtn{
+  margin-left: 20px;
+  margin-right: 30px;
+  height: 35px;
+  width: 80px;
+  border: none;
+  background-color:rgb(104, 140, 165);
+  color: white;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.Commentbtn:hover {
+  background-color: rgb(72, 96, 112);
+}
+.card-img-overlay {
+  margin-bottom: 111%;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  opacity: 0.6;
+  transition: 0.5s;
+  border-radius-top: 10px;
+}
+.card {
+  margin-right: 15px;
+  border-radius: 10px;
+  border-width: 0px;
+}
+
+.card:hover .card-img-overlay {
+  margin-top: 320px;
+  opacity: 0.8;  
+}
+.card-title{
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: 'Gothic A1', sans-serif;
+}
+.card-year{
+  font-size: 18px;
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.card-text::-webkit-scrollbar {
+  display: none;  /*Chrome*/
+}
+
+.card-text {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  height: 175px;
+  overflow: scroll;
+  text-indent: 1.5rem;
+}
+
+.card-director {
+  vertical-align: text-bottom;
+  font-style: italic;
+  font-size: 15px;
+}
+.modal-header{
+  background-color:rgb(30, 35, 37);
+  font-family: 'Gothic A1', sans-serif;
+  color: white;
+  border-radius: 5px;
+  flex-wrap: wrap; 
+}
+.modal-title {
+  margin-bottom: 10px;
+}
+.modal-body{
+  background-color: grey;
+}
+
+.rating {
+  display: inline-block;
+  position: relative;
+  line-height: 25px;
+  font-size: 25px;
+}
+
+.rating label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  cursor: pointer;
+}
+
+.rating label:last-child {
+  position: static;
+}
+
+.rating label:nth-child(1) {
+  z-index: 5;
+}
+
+.rating label:nth-child(2) {
+  z-index: 4;
+}
+
+.rating label:nth-child(3) {
+  z-index: 3;
+}
+
+.rating label:nth-child(4) {
+  z-index: 2;
+}
+
+.rating label:nth-child(5) {
+  z-index: 1;
+}
+
+.rating label input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.rating label .icon {
+  float: left;
+  color: transparent;
+}
+
+.rating label:last-child .icon {
+  color: #000;
+}
+
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+  color: #09f;
+}
+
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+  color: #000;
+  text-shadow: 0 0 5px #09f;
+}
+
+
+/* CommentsCSS */
+.comment-section {
+  margin-top: 20px;
+}
+
+.comments-title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.comments-container {
+  margin-top: 40px;
+}
+
+.comment-form-title {
+  font-size: 16px;
+}
+
+.comment-form-textarea {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  border: 1px solid rgb(107, 114, 12);
+}
+
+.comment-form-button {
+  font-size: 16px;
+  padding: 8px 16px;
+  background: rgb(59, 130, 246);
+  border-radius: 8px;
+  color: white;
+}
+
+.comment-form-button:hover:enabled {
+  cursor: pointer;
+  background: rgb(37, 99, 235);
+}
+
+.comment-form-button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.comment-form-cancel-button {
+  margin-left: 10px;
+}
+
+.comment {
+  display: flex;
+  margin-bottom: 28px;
+}
+
+.comment-avatar {
+  margin-right: 12px;
+}
+
+.comment-avatar img {
+  border-radius: 50px;
+}
+
+.comment-right-part {
+  width: 100%;
+}
+
+.comment-content {
+  display: flex;
+}
+
+.comment-author {
+  margin-right: 8px;
+  font-size: 20px;
+  color: rgb(31, 77, 150);
+}
+
+.comment-text {
+  font-size: 18px;
+}
+
+.comment-actions {
+  display: flex;
+  font-size: 12px;
+  color: rgb(51, 51, 51);
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.comment-action {
+  margin-right: 8px;
+}
+
+.comment-action:hover {
+  text-decoration: underline;
+}
+
+.replies {
+  margin-top: 20px;
+}
+
+.footer {
+  position: relative;
+  left: 0;
+  bottom: 20px;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
+  opacity: .7;
+}
